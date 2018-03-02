@@ -1,7 +1,7 @@
-class Words
+class Sequence
     {
     public:
-        Words();
+        Sequence();
         
         void append(std::string word);
         std::string& operator[] (unsigned int index);
@@ -11,7 +11,7 @@ class Words
         std::string operator[] (unsigned int index) const;
         
     private:
-        std::string data[10]; // max words is 10 in ver. 1
+        std::string data[10]; // maximum number of elements
         unsigned int used;
         unsigned int capacity;
     };
